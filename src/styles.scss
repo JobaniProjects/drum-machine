@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+$drum-body-color-1:#d4ffea;
+$drum-pad-color-1: #FDFBD4;
+$drum-pad-highlight: #fcba03;
+$bg-color-1: #f7f74a;
+
+//cream color: #FDFBD4
+//gray white: #EBEFF5
+//green : #32a852
+//orange: #fcba03
+//grayish green : #badebd
+//dark blue: #3279a8
+
+
+.drum-pad{
+    font-family: "Funnel Display";
+}
+
+.drums{
+    
+    display:grid;
+    grid-template-columns: 110px 110px 0fr;
+    grid-template-rows: 110px 110px 0fr;
+    // border-radius: 100px;
+    user-select: none;
+    
+}
+
+#drum-machine{
+    width:600px;
+    height:350px;
+    background-color:$drum-body-color-1;
+    border: 4px solid black;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:120px;
+}
+
+#container-drums{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.dm-title{
+    position:relative;
+    left:420px;
+    bottom:320px;
+    font-family:"Lobster";
+    // font-size: larger;
+    font-size:22px;
+}
+
+#display{
+    
+    width:120px;
+    height:50px;
+    background-color:lightblue;
+    
+    // display:inline-block;
+    // margin-left:10px;
+    // margin-top:50px;
+
+    position:relative;
+    left:400px;
+    bottom:210px;
+    
+}
+
+#display-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:12px;
+    font-family:"Funnel Display";
+}
+
+#drumpad{
+    border: 1px solid black;
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+// Background color for every individual pad
+.pad-bg-color-1{
+    background-color:$drum-pad-color-1;
+}
+
+#drumpad:hover{
+    cursor:pointer;
+}
+
+
+// .Q{
+//     color:pink;
+// }
+
+// #btn-grid{
+//     width:350px;
+//     margin-left:20px;
+//     margin-top:20px;
+// }
+
+
+
+.button-custom{
+    width:90px;
+    height:80px;
+    border-radius: 8px;
+}
+
+.pink{
+    // color:pink;
+    background-color: $drum-pad-highlight;
+}
+
